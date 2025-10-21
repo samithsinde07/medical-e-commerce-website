@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 215 25% 27%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 27%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 27%;
+
+    --primary: 200 98% 39%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 200 95% 50%;
+
+    --secondary: 160 84% 39%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 160 84% 39%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 200 98% 39%;
+
+    --radius: 0.75rem;
+
+    --hero-gradient: linear-gradient(135deg, hsl(200 98% 39%), hsl(160 84% 39%));
+    --card-gradient: linear-gradient(to bottom, hsl(0 0% 100%), hsl(210 40% 99%));
+    --glow-shadow: 0 8px 32px -8px hsl(200 98% 39% / 0.3);
+    --elevated-shadow: 0 4px 16px -4px hsl(215 25% 27% / 0.1);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 215 25% 27%;
+    --sidebar-primary: 200 98% 39%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 40% 96%;
+    --sidebar-accent-foreground: 215 25% 27%;
+    --sidebar-border: 214 32% 91%;
+    --sidebar-ring: 200 98% 39%;
+  }
+
+  .dark {
+    --background: 215 28% 17%;
+    --foreground: 210 40% 98%;
+
+    --card: 215 27% 20%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 215 27% 20%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 200 98% 50%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 200 95% 60%;
+
+    --secondary: 160 70% 45%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 215 25% 25%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 160 70% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 215 25% 25%;
+    --input: 215 25% 25%;
+    --ring: 200 98% 50%;
+
+    --hero-gradient: linear-gradient(135deg, hsl(200 98% 50%), hsl(160 70% 45%));
+    --card-gradient: linear-gradient(to bottom, hsl(215 27% 20%), hsl(215 28% 18%));
+    --glow-shadow: 0 8px 32px -8px hsl(200 98% 50% / 0.4);
+    --elevated-shadow: 0 4px 16px -4px hsl(0 0% 0% / 0.3);
+
+    --sidebar-background: 215 28% 15%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 200 98% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 215 25% 25%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 215 25% 25%;
+    --sidebar-ring: 200 98% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
